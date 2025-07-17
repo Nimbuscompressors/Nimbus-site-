@@ -1,98 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+/* index.css - Nimbus Compressors Website */ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 
-:root {
-  --background: #0f172a;
-  --foreground: #f8fafc;
-  --primary: #3b82f6;
-  --primary-foreground: #ffffff;
-  --secondary: #1e293b;
-  --border: #334155;
-  --radius: 0.5rem;
-}
+:root { --background: #0f172a; --foreground: #f8fafc; --primary: #3b82f6; --primary-foreground: #ffffff; --secondary: #1e293b; --border: #334155; --radius: 0.5rem; }
 
-body {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #312e81 100%);
-  color: var(--foreground);
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  line-height: 1.6;
-  font-size: 16px;
-}
+body { font-family: 'Inter', sans-serif; margin: 0; background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #312e81 100%); color: var(--foreground); min-height: 100vh; scroll-behavior: smooth; line-height: 1.6; font-size: 16px; }
 
-.glass {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
+.glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
 
-.gradient-text {
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+.gradient-text { background: linear-gradient(135deg, #3b82f6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
+@keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
 
-.float-animation {
-  animation: float 3s ease-in-out infinite;
-}
+.float-animation { animation: float 3s ease-in-out infinite; }
 
-.hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+.hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
 
-.hover-lift:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
+.hover-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); }
 
-.button, button {
-  background-color: var(--primary);
-  color: var(--primary-foreground);
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--radius);
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-}
+.button, button { background-color: var(--primary); color: var(--primary-foreground); padding: 0.75rem 1.5rem; border-radius: var(--radius); font-weight: 600; border: none; cursor: pointer; text-decoration: none; display: inline-block; }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
+::-webkit-scrollbar { width: 8px; }
 
-::-webkit-scrollbar-track {
-  background: #1e293b;
-}
+::-webkit-scrollbar-track { background: #1e293b; }
 
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
-  border-radius: 4px;
-}
+::-webkit-scrollbar-thumb { background: linear-gradient(135deg, #3b82f6, #06b6d4); border-radius: 4px; }
 
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #2563eb, #0891b2);
-}
+::-webkit-scrollbar-thumb:hover { background: linear-gradient(135deg, #2563eb, #0891b2); }
 
-input:focus, textarea:focus {
-  outline: 2px solid var(--primary);
-  background: #0f172a;
-}
+input:focus, textarea:focus { outline: 2px solid var(--primary); background: #0f172a; }
 
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  nav a {
-    margin: 0.25rem 0;
-  }
-}
+@media (max-width: 768px) { nav { flex-direction: column; align-items: flex-start; } nav a { margin: 0.25rem 0; } }
+
