@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- full code omitted for brevity --><!-- ======================== --><!-- contact.html --><!-- ======================== --><!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,39 +10,35 @@
       flex-direction: column;
       gap: 1rem;
       font-size: 1.1rem;
-    }
+    }.contact-buttons a {
+  margin-top: 1rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
 
-    .contact-buttons a {
-      margin-top: 1rem;
-      display: inline-block;
-      margin-right: 1rem;
-    }
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: #1e293b;
+  color: white;
+}
 
-    form input, form textarea {
-      width: 100%;
-      margin-bottom: 1rem;
-      padding: 0.75rem;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: #1e293b;
-      color: white;
-    }
+form button {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
 
-    form button {
-      background-color: var(--primary);
-      color: var(--primary-foreground);
-      padding: 0.75rem 1.5rem;
-      border-radius: var(--radius);
-      font-weight: 600;
-      border: none;
-      cursor: pointer;
-    }
   </style>
 </head>
-<body>
-
-  <!-- Navigation -->
-  <nav>
+<body>  <!-- Navigation -->  <nav>
     <div class="gradient-text" style="font-size: 1.5rem;">Nimbus Compressors</div>
     <div>
       <a href="index.html">Home</a>
@@ -53,38 +48,30 @@
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
     </div>
-  </nav>
-
-  <!-- Contact Section -->
-  <section class="glass container">
+  </nav>  <!-- Contact Section -->  <section class="glass container">
     <h1 class="gradient-text">Get in Touch</h1>
     <div class="contact-info">
       <p>📍 <strong>Location:</strong> India-wide service coverage</p>
       <p>📞 <strong>Phone:</strong> <a href="tel:+919289425601">+91 9289425601</a>, <a href="tel:+917669669296">+91 7669669296</a></p>
-      <p>📧 <strong>Email:</strong> <a href="mailto:nimbuscompressors@gmail.com">nimbuscompressors@gmail.com</a></p>
-    </div>
+      <p>✉️ <strong>Email:</strong> <a href="mailto:nimbuscompressors@gmail.com">nimbuscompressors@gmail.com</a></p>
+    </div><div class="contact-buttons">
+  <a href="mailto:nimbuscompressors@gmail.com" class="button">Email Us</a>
+  <a href="tel:+919289425601" class="button">Call Now</a>
+</div>
 
-    <div class="contact-buttons">
-      <a href="mailto:nimbuscompressors@gmail.com" class="button">Email Us</a>
-      <a href="tel:+919289425601" class="button">Call Now</a>
-    </div>
+<hr style="margin: 2rem 0; border-color: rgba(255, 255, 255, 0.1);" />
 
-    <hr style="margin: 2rem 0; border-color: rgba(255, 255, 255, 0.1);" />
+<!-- Quote Form -->
+<h2 class="gradient-text">Request a Quote</h2>
+<form name="contact-form" method="POST" data-netlify="true">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <input type="tel" name="phone" placeholder="Your Phone Number" required />
+  <textarea name="message" rows="5" placeholder="What can we help you with?" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
 
-    <!-- Quote Form -->
-    <h2 class="gradient-text">Request a Quote</h2>
-    <form name="contact-form" method="POST" data-netlify="true">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="tel" name="phone" placeholder="Your Phone Number" required />
-      <textarea name="message" rows="5" placeholder="What can we help you with?" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
+  </section>  <footer>
     &copy; 2025 Nimbus Compressors. All rights reserved.
-  </footer>
-
-</body>
+  </footer></body>
 </html>
