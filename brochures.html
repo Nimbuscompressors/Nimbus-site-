@@ -1,1 +1,94 @@
-...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brochures | Nimbus Compressors</title>
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    .brochure-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+    }
+    .brochure-table th, .brochure-table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .brochure-table th {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .download-button {
+      background-color: var(--primary);
+      color: var(--primary-foreground);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="gradient-text" style="font-size: 1.5rem;">Nimbus Compressors</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="brochures.html">Brochures</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Brochures Section -->
+  <section class="glass container">
+    <h1 class="gradient-text">Product Brochures</h1>
+    <p>You can download product-wise brochures or the complete Nimbus master catalog below.</p>
+
+    <div style="margin-top: 1.5rem;">
+      <a href="#" class="button">📘 Download Master Catalog (PDF)</a>
+    </div>
+
+    <table class="brochure-table">
+      <thead>
+        <tr>
+          <th>Product Category</th>
+          <th>Download</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Reciprocating Compressors</td>
+          <td><a href="#" class="download-button">Download PDF</a></td>
+        </tr>
+        <tr>
+          <td>Screw Compressors</td>
+          <td><a href="#" class="download-button">Download PDF</a></td>
+        </tr>
+        <tr>
+          <td>Oil-Free Compressors</td>
+          <td><a href="#" class="download-button">Download PDF</a></td>
+        </tr>
+        <tr>
+          <td>Air Dryers & Filters</td>
+          <td><a href="#" class="download-button">Download PDF</a></td>
+        </tr>
+        <tr>
+          <td>Spare Parts & Accessories</td>
+          <td><a href="#" class="download-button">Download PDF</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    &copy; 2025 Nimbus Compressors. All rights reserved.
+  </footer>
+
+</body>
+</html>
